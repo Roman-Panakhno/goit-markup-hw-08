@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $title-cl;
+  text-decoration: none;
+  list-style: none;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+body.is-open {
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  //display: flex;
+  // align-items: center;
+  //justify-content: center;
+
+  // max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+  //outline: 3px solid rgba(81, 173, 6, 0.432);
+}

@@ -1,0 +1,111 @@
+.page-hero {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  font-weight: 400;
+
+  margin: 0 auto;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  background-color: $dark-bg;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/header-img-480-1x.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  // max-width: 1600px;
+  // height: 400px;
+
+  @media screen and (min-width: 480px) {
+    height: 400px;
+    flex-basis: 480px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: 768px;
+    height: 400px;
+    //   padding-top: 118px;
+    //    padding-bottom: 118px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/header-img-768-1x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/header-img-1600-1x.jpg);
+  }
+}
+
+.page-hero__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  //  width: calc(100% / 12 * 8);
+}
+
+.page-hero__title {
+  text-align: center;
+
+  margin: auto;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $alt-titel-cl;
+
+  @media screen and (max-width: 768px) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+/*
+.page-hero__bgImage {
+  margin: 0 auto;
+
+  background-color: $dark-bg;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-img.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  max-width: 1600px;
+  height: 600px;
+}
+*/

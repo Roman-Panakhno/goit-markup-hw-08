@@ -1,0 +1,62 @@
+.work {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.work-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+
+  color: $main-text-cl;
+}
+
+.work-list {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+.work-overlay {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.work-sub {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 70px;
+
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $alt-titel-cl;
+  background-color: rgba(47, 48, 58, 0.8);
+}

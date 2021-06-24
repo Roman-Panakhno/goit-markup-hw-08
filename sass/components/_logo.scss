@@ -1,0 +1,52 @@
+/*
+.nav > .logo {
+margin-right: 90px;
+
+padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.logo {
+  display: inline-block;
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-cl);
+}
+.logo-hd {
+  color: var(--main-text-cl);
+}
+
+.logo-ft {
+  color: var(--alt-titel-cl);
+}
+*/
+
+.logo {
+  display: inline-block;
+  font-family: $title-font;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $accent-cl;
+  text-decoration: none;
+}
+
+.logo-header {
+  margin: 0;
+  padding: 0;
+
+  color: $main-text-cl;
+  @media screen and (min-width: 1200px) {
+    margin-right: 90px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+.logo-footer {
+  color: $alt-titel-cl;
+}
