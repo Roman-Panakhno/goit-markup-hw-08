@@ -1117,14 +1117,29 @@ padding-top: 25px;
           justify-content: space-evenly;
 }
 
-.partners-item {
-  margin-bottom: 30px;
-  max-width: 210px;
+@media screen and (max-width: 1199px) {
+  .partners-list {
+    margin-left: calc(-1 * 30px);
+  }
 }
 
-@media screen and (min-width: 768px) {
+.partners-item {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
   .partners-item {
-    max-width: 226px;
+    margin-left: 30px;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .partners-item {
+    margin-left: 30px;
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
   }
 }
 
@@ -1716,9 +1731,10 @@ padding-top: 25px;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
+  margin: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .portfolio-filter__list {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -1730,7 +1746,7 @@ padding-top: 25px;
   margin-right: 8px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .portfolio-filter__item:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -1790,7 +1806,7 @@ padding-top: 25px;
   list-style: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .portfolio-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1810,7 +1826,7 @@ padding-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 450px;
+  height: auto;
   margin-left: 30px;
   margin-top: 30px;
   border: 1px solid #eeeeee;
@@ -1819,14 +1835,17 @@ padding-top: 25px;
 
 @media screen and (min-width: 768px) {
   .portfolio-list__item {
-    max-width: 354px;
+    -ms-flex-preferred-size: calc( 100% / 2 - 30px);
+        flex-basis: calc( 100% / 2 - 30px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-list__item {
-    -ms-flex-preferred-size: calc(100% / 3 - 30px);
-        flex-basis: calc(100% / 3 - 30px);
+    max-width: 354px;
   }
 }
 

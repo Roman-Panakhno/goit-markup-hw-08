@@ -18,7 +18,7 @@
 
   list-style: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     justify-content: center;
   }
 
@@ -29,7 +29,8 @@
 
 .portfolio-list__item {
   display: flex;
-  max-width: 450px;
+  // max-width: 450px;
+  height: auto;
 
   margin-left: 30px;
   margin-top: 30px;
@@ -38,11 +39,14 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (min-width: 768px) {
-    max-width: 354px;
+    flex-basis: calc(
+      100% / 2 - 30px
+    ); // увеличение карточки без увеличения картинки
+    justify-content: center;
   }
 
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 3 - 30px);
+    max-width: 354px;
   }
 }
 
