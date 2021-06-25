@@ -8,6 +8,7 @@
 
   margin: 0 auto;
 
+  height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
 
@@ -22,17 +23,16 @@
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   // max-width: 1600px;
-  // height: 400px;
 
   @media screen and (min-width: 480px) {
-    height: 400px;
+    // height: 400px;
     flex-basis: 480px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-basis: 768px;
+  @media screen and (min-width: 767px) {
+    // flex-basis: 768px;
     height: 400px;
     //   padding-top: 118px;
     //    padding-bottom: 118px;
@@ -60,6 +60,49 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2) and (max-width: 767px),
+  (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+  (min-resolution: 2dppx) and (max-width: 767px) {
+  .page-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/header-img-480-2x.jpg);
+    width: 100vw;
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+  (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+  (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .page-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/header-img-768-2x.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1199px) and (max-width: 1600px),
+  (-webkit-min-device-pixel-ratio: 2) and (mmin-width: 1199px) and (max-width: 1600px),
+  (min-resolution: 192dpi) and (min-width: 1199px) and (max-width: 1600px),
+  (min-resolution: 2dppx) and (min-width: 1199px) and (max-width: 1600px) {
+  .page-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/header-img-1600-2x.jpg);
+  }
+}
+
 .page-hero__content {
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +126,7 @@
   text-transform: uppercase;
   color: $alt-titel-cl;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     font-size: 26px;
     line-height: 1.62;
   }
