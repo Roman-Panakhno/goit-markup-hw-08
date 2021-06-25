@@ -58,6 +58,12 @@
   flex-basis: calc(100% / 2);
   //
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .footer-socials__title {

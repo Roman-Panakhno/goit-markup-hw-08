@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 .subscribe-label {
   margin-bottom: 20px;

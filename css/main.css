@@ -960,8 +960,17 @@ padding-top: 25px;
 
 @media screen and (min-width: 768px) {
   .team-item {
-    max-width: 354px;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+  }
+  .team-item picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1254,6 +1263,19 @@ padding-top: 25px;
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .footer-socials__title {
   margin: 0;
   margin-bottom: 20px;
@@ -1317,6 +1339,14 @@ padding-top: 25px;
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .subscribe-label {
